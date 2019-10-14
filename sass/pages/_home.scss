@@ -1,0 +1,30 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 10rem 0;
+    margin-top: -5vh;
+    margin-bottom: -5vh;
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image:  linear-gradient(to right bottom, rgba($color-primary-charcoal, 0.8), rgba($color-primary-charcoal, 0.8)), url(../img/winter-night-copy2.jpeg);
+    background-size: cover;
+    background-position: top;
+    
+    -webkit-clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 100%, 50% 95%, 0 100%);
+    clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 100%, 50% 95%, 0 100%);
+    
+}
+    /*clip-path: polygon(0 0, 100% 0, 100% 90vh, 50% 100%, 0 90vh); ---- header */
+
+.section-work {
+    background-color: $color-grey-light-1;
+    padding: 10rem 0 15rem 0;
+    margin-top: -5rem;
+
+}
+
+.section-stories {
+    position: relative;
+    padding: 10rem 0;
+}

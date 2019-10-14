@@ -1,0 +1,71 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-grey-light-2, .6);
+    border-radius: 3px;
+    padding: 6rem;   
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+    & > * {
+        transform: skewX(12deg);
+    }
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        position: relative;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg); /* when dealing with floated items, better to transform/translate than to use margin/padding. */
+    }
+    &__img-1 {
+            width: 100%; /*If this was a horizontal image, i would have to use height not width bc it is taller than its width. */
+        /* If pic wasnt centered we could use transform: translateX(-4rem); */
+            backface-visibility: hidden;
+            transform: scale(1.08);
+            transition: all .5s;
+        }
+
+    &__img-2 {
+            height: 100%;
+            backface-visibility: hidden;
+            transform: translateX(-4rem) scale(1.2);
+            transition: all .5s;
+        }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%); /*initially the Y was set to -50% but we want it to move in so we set it to 20% and then at hover it moves up*/
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover &__img-1 {
+        transform: scale(1);
+        filter: blur(1px) brightness(85%);
+    }
+    &:hover &__img-2 {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(1px) brightness(85%);
+    }
+}

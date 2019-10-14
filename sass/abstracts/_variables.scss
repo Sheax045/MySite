@@ -1,0 +1,53 @@
+/*
+COLORS:
+
+Light blue: #75b9f4
+Medium blue: #105aed
+Dark blue: #153b87
+
+charcoal: #333333
+light green: #7bf2a1
+dark green: #
+light orange: #f9b570
+dark orange:#
+turquoise: #83dbdb
+light purple: #c392e5
+dark purple:#
+light red: #e88484
+dark red: #
+
+logo: #B1FDF0
+
+*/
+$color-primary: #105aed;
+$color-primary-light: #75b9f4;
+$color-primary-dark: #153b87;
+
+$color-secondary-light:#f9b570;
+$color-secondary-dark: #e88484; 
+
+$color-tertiary-light:#7ed56f;
+$color-tertiary-dark: #28b485;
+
+
+$color-primary-charcoal: #333333;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-turquoise: #88d3c7;  /* old one --- #83dbdb */
+$color-purple-light: #d5a8f4;
+$color-green-light: #aeeaa4;
+$color-black:#000;
+
+//GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//FONT
+$default-font-size: 1.6rem;
